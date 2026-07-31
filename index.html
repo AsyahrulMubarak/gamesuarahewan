@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suara Hewan Pintar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pilih Hewan dan Dengarkan Suaranya!</h1>
+        
+        <div class="grid-hewan">
+            <!-- Contoh Hewan 1 (Kucing) -->
+            <!-- ganti 'kucing' dengan nama file Anda, ganti 'Kucing' dengan teks tampilan -->
+            <div class="kartu-hewan" onclick="putarSuara('skucing')">
+                <img src="gambar/kucing.png" alt="Kucing">
+                <h3>Kucing</h3>
+            </div>
+
+            <!-- Contoh Hewan 2 (Anjing) -->
+            <div class="kartu-hewan" onclick="putarSuara('sanjing')">
+                <img src="gambar/anjing.jpg" alt="Anjing">
+                <h3>Anjing</h3>
+            </div>
+
+            <!-- Contoh Hewan 3 (Sapi) -->
+            <div class="kartu-hewan" onclick="putarSuara('ssapi')">
+                <img src="gambar/sapi.jpg" alt="Sapi">
+                <h3>Sapi</h3>
+            </div>
+
+            <!-- Anda bisa menambah hewan lain di sini dengan format yang sama -->
+
+        </div>
+    </div>
+
+    <!-- Elemen audio tersembunyi yang digunakan oleh JavaScript -->
+    <audio id="player-audio"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
